@@ -1,0 +1,43 @@
+<div class="main">
+    <div class="main1">
+      <form [formGroup]="signin1" (ngSubmit)="signin()">
+        <div class="content">
+          <h3>AgileStory</h3>
+          <h5>SignIn in Your Account</h5>
+        </div>
+        <div class="form-group">
+          <label>Enter Your Email</label>
+          <input type="email" class="form-control" formControlName="myemail" [ngClass]="{
+            'is-invalid':submitted && err.myemail.errors}">
+          <div *ngIf=" submitted && err.myemail.errors">
+            <div
+            *ngIf="err.myemail.errors?.required">
+              Required!
+            </div>
+            <div
+            *ngIf="err.myemail.errors?.pattern">
+              Enter a valid email!
+            </div>
+        </div>
+        </div>
+        <div class="form-group">
+          <label>Enter Your Password</label>
+          <input type="password" class="form-control" formControlName="password"  [ngClass]="{
+            'is-invalid':submitted && err.password.errors}">
+            <div *ngIf=" submitted && err.password.errors" >
+              <div
+              *ngIf="err.password.errors?.required">
+               Required! 
+              </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary" type="submit">SIGN IN</button>
+        </div>
+      </form>
+      
+  
+    </div>
+  </div>
+  
+  

@@ -1,0 +1,73 @@
+nav{
+    color:azure;
+     box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+}
+.navbar-brand{
+    color: azure;
+    font-style: italic;
+}
+.main{
+    height:180vh;
+    background-image:linear-gradient(to bottom right,#3399FF,azure) ;
+    
+}
+.btn{
+    padding:5px 20px 5px 20px;
+    color:azure;
+    font-style: italic;
+}
+.btn1{
+    padding:5px 20px 5px 20px;
+    color:azure;
+    font-style: italic;
+    margin-left:1000px;
+}
+.main2{
+    margin-top:150px;
+    display: flex;
+    justify-content: center;
+    color:azure;
+    font-style: italic;
+}
+.main3{
+    margin-top:0px;
+    display: flex;
+    justify-content: center;
+    color:azure;
+    font-style: italic;
+}
+.main4{
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+    color:azure;
+    font-style: italic;
+}
+.main4 .btn{
+    padding:20px 40px 20px 40px;
+    font-size: x-large;
+}
+.main5{
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
+    font-style: italic;
+    color:azure;
+}
+.main6{
+    margin: 70px 0px 0px 90px;
+    display:flex;
+    justify-content: center;
+}
+.card{
+   background-color: transparent;
+   box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+   color:#0080FF;
+
+}
+.card img{
+   margin:20px 20px 20px 80px;
+}
+
+
+

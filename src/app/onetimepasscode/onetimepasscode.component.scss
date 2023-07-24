@@ -1,0 +1,26 @@
+.main{
+    height:100vh;
+    background-image: linear-gradient(to bottom right,#3399FF,azure) ;;
+}
+.main1{
+    display: flex;
+    justify-content: center;
+}
+form{
+   margin-top:200px;
+   width:600px;
+   height:300px;
+   box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+   border-radius: 10px;
+   padding:10px 10px 10px 10px;
+   color:azure;
+   font-style: italic;
+}
+.form-control{
+    width:575px;
+    border:1px solid #3399FF;
+}
+.btn{
+    margin-top:20px;
+    width:575px;
+}

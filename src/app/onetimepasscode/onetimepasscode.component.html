@@ -1,0 +1,24 @@
+<div class="main">
+    <div class="main1">
+    
+
+        <form [formGroup]="otp" (ngSubmit)="verify()">
+            <h4>Enter Your One Time Passcode.</h4><br>
+        <h6>We have sent you a One Time Passcode Over Mail.</h6>
+            <div class="form-group">
+                <label>Enter Your Passcode Here</label>
+                <input type="number" class="form-control" formControlName="otp">
+                <div *ngIf="submitted && err.otp.errors" [ngClass]="{
+                    'is-invalid':submitted && err.otp.errors}">
+                    <div
+                    *ngIf="err.otp.errors?.required">
+                      Required!
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit">VERIFY</button>
+            <button class="btn" type="button" routerLink="/emailsignin">CANCEL</button>
+        </form>
+    
+      </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="main">
+     <form [formGroup]="idea" (ngSubmit)="postIdea()" *ngIf="notdone">
+        <h2>1.Idea</h2>
+        <h5 style="margin-top: 50px;">Write a Product idea in a few Sentences and use one of the samples below:</h5>
+         <div class="form-group">
+            <input style="margin-top:40px;" type="text" class="form-control" formControlName="product_idea" placeholder="E.g. A mobile app to remind me to take my medicine in the right time everyday.">
+            <button class="btn btn-primary" type="submit">START</button>
+         </div>
+      </form>
+      <form  [formGroup]="feature" class="features" (ngSubmit)="postFeature()" *ngIf="done">
+         <h2>1.Idea</h2>
+         <h5 style="margin-top: 50px;">{{product_idea1}}</h5>
+         <div class="form-check" *ngFor="let item of featureArrray">
+            <input class="form-check-input" type="radio" name="feature_idea" id="exampleRadios1" value="{{item}}" formControlName="feature_idea">
+            <label class="form-check-label" for="exampleRadios1">
+             {{item}}
+            </label>
+         </div>
+
+         <button class="btn btn-primary" type="submit">NEXT</button>
+      </form>
+    
+</div>

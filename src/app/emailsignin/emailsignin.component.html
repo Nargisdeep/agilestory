@@ -1,0 +1,28 @@
+<div class="main">
+  <div class="main1">
+    
+
+    <form [formGroup]="emailsignin" (ngSubmit)="start()">
+        <h4>Let's get started.</h4><br>
+    <h6>Please Enter a valid email,and we will send you a One Time Passcode to log in.</h6>
+        <div class="form-group">
+            <label>Enter Your Email Here</label>
+            <input type="email" class="form-control" formControlName="email">
+            <div *ngIf="submitted && err.email.errors" [ngClass]="{
+                'is-invalid':submitted && err.email.errors}">
+                <div
+                *ngIf="err.email.errors?.required">
+                  Required!
+                </div>
+                <div
+                *ngIf="err.email.errors?.pattern">
+                  Enter a valid email!
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">START</button>
+    </form>
+
+  </div>
+
+</div>
